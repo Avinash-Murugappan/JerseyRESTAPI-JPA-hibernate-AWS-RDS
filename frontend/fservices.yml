@@ -1,0 +1,18 @@
+#SWE 645 Assignment2, Team members: Avinash[G01163980], Rashi[G01225299], Rushil[G01203932], Mithilaesh[G01206238].
+
+
+#purpose of this Yaml file is to build service Definition objects
+
+
+kind: Service
+apiVersion: v1
+metadata:
+  name: fnodeapp
+spec:
+  selector:
+    app: fnodeapp
+  ports:
+  - protocol: TCP
+    port: 4201
+    targetPort: 8082
+  type: LoadBalancer   
