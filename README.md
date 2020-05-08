@@ -1,5 +1,11 @@
 # Angular, RESTful Web Services, and JPA
 
-a single page web application using Angular2 (or later
+A single page web application using Angular2 (or later
 versions), RESTful Web Services and JPA/Hibernate along with Amazon Relational Database
 Service (Amazon RDS)/MySQL to persist and read data to/from a relational database.
+
+Containerized the application using two containers:
+1) container for Angular application,
+2) container for RESTful APIs, using Docker. 
+Deployed the containerized applications on the container orchestration platform
+Kubernetes.Integrated the Kubernetes platform with the CI/CD pipeline using Jenkins.
